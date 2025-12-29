@@ -1,13 +1,25 @@
-<link rel="stylesheet" href="style.css">
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Wunschlisten Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wunschliste</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hey diese Website ist dazu da Wunschlisten mit der Familie/Freunde zu teilen</h1>
-  <p>Meine Website ist jetzt online!</p>
+  <div class="container">
+    <h1>Meine Wunschliste 🎁</h1>
+
+    <!-- Admin: Neues Element hinzufügen -->
+    <div id="admin-panel" style="display:none;">
+      <input type="text" id="new-item" placeholder="Neuen Wunsch eingeben">
+      <button id="add-button">Hinzufügen</button>
+    </div>
+
+    <!-- Wunschliste -->
+    <ul id="wish-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
